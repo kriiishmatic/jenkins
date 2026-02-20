@@ -25,10 +25,7 @@
 // }
 
 pipeline {
-    agent {
-        label 'jenkins-node-1'
-    }
-
+    agent any
     stages {
         stage('Build') {
             steps {
